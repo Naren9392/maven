@@ -32,7 +32,7 @@ jobs:
                mkdir -p eb-deployment
                cp target/*.jar eb-deployment/
                echo "web: java -jar *.jar" > eb-deployment/Procfile
-               ls - la eb-deployment
+               ls -la eb-deployment
             - name: upload artificat
               uses: actions/upload-artifact@v4
               with: 
