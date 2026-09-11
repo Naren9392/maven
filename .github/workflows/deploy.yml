@@ -85,8 +85,8 @@ jobs:
                 cat deployment/Procfile
                 test -f deployment/Procfile && echo "Procfile exists"
                 test -f deployment/*.jar && echo "Jar file exists"
-              - name: create a zip file
-                run: |
+            - name: create a zip file
+              run: |
                   cd deployment
                   zip -r ../Streamflixdeployment.zip *
                   cd ..
